@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomActionSheet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7k-dU-Rrf">
+                                <rect key="frame" x="20" y="70" width="335" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.95450586039999996" blue="0.2798066226" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zdQ-YH-GYg"/>
+                                </constraints>
+                                <state key="normal" title="DefaultActionSheet"/>
+                                <connections>
+                                    <action selector="defaultActionSheetButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Swi-FI-KSb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0R-HC-DLp">
+                                <rect key="frame" x="20" y="120" width="335" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.95450586039999996" blue="0.2798066226" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mVR-k0-jMP"/>
+                                </constraints>
+                                <state key="normal" title="CustomActionSheet"/>
+                                <connections>
+                                    <action selector="customActionSheetButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J5M-fe-lwG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1v-6h-ttM">
+                                <rect key="frame" x="20" y="170" width="335" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.95450586039999996" blue="0.2798066226" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eOL-1a-hfy"/>
+                                </constraints>
+                                <state key="normal" title="BlockActionSheet"/>
+                                <connections>
+                                    <action selector="blockActionSheetButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hcP-8H-swP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="n1v-6h-ttM" secondAttribute="trailing" constant="20" id="Cta-7V-IJK"/>
+                            <constraint firstItem="P0R-HC-DLp" firstAttribute="top" secondItem="h7k-dU-Rrf" secondAttribute="bottom" constant="20" id="HJD-RD-Dkw"/>
+                            <constraint firstItem="h7k-dU-Rrf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="NEI-eL-0kK"/>
+                            <constraint firstItem="h7k-dU-Rrf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Nyy-rl-2F2"/>
+                            <constraint firstItem="P0R-HC-DLp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Zr4-UQ-wBW"/>
+                            <constraint firstAttribute="trailing" secondItem="h7k-dU-Rrf" secondAttribute="trailing" constant="20" id="gje-aA-ybR"/>
+                            <constraint firstItem="n1v-6h-ttM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="l27-wN-dQQ"/>
+                            <constraint firstItem="n1v-6h-ttM" firstAttribute="top" secondItem="P0R-HC-DLp" secondAttribute="bottom" constant="20" id="rm4-Or-Mne"/>
+                            <constraint firstAttribute="trailing" secondItem="P0R-HC-DLp" secondAttribute="trailing" constant="20" id="rxc-ER-GS9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

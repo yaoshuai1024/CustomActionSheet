@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVn-RI-iW4">
+                                <rect key="frame" x="20" y="70" width="335" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.95450586039999996" blue="0.2798066226" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Z3Z-SI-DNF"/>
+                                </constraints>
+                                <state key="normal" title="默认：使用代理"/>
+                                <connections>
+                                    <action selector="defaultAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DAA-rj-9IU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSU-K5-ee5">
+                                <rect key="frame" x="20" y="120" width="335" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.95450586039999996" blue="0.2798066226" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3zK-Fe-PKw"/>
+                                </constraints>
+                                <state key="normal" title="自定义样式：使用代理"/>
+                                <connections>
+                                    <action selector="customStyleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6el-pP-dZh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTw-CO-q75">
+                                <rect key="frame" x="20" y="170" width="335" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.95450586039999996" blue="0.2798066226" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="L8u-lA-l8I"/>
+                                </constraints>
+                                <state key="normal" title="使用Block"/>
+                                <connections>
+                                    <action selector="blockAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S3A-9N-1iU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YVn-RI-iW4" secondAttribute="trailing" constant="20" id="0Kh-na-YPC"/>
+                            <constraint firstItem="HSU-K5-ee5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="FNG-AW-sdB"/>
+                            <constraint firstAttribute="trailing" secondItem="tTw-CO-q75" secondAttribute="trailing" constant="20" id="M1F-Vj-utS"/>
+                            <constraint firstItem="tTw-CO-q75" firstAttribute="top" secondItem="HSU-K5-ee5" secondAttribute="bottom" constant="20" id="Sjm-NT-l9W"/>
+                            <constraint firstItem="YVn-RI-iW4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="StU-Ud-9nQ"/>
+                            <constraint firstItem="YVn-RI-iW4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="dsB-pk-frS"/>
+                            <constraint firstItem="HSU-K5-ee5" firstAttribute="top" secondItem="YVn-RI-iW4" secondAttribute="bottom" constant="20" id="eXH-wU-Jzp"/>
+                            <constraint firstAttribute="trailing" secondItem="HSU-K5-ee5" secondAttribute="trailing" constant="20" id="isW-Js-o3l"/>
+                            <constraint firstItem="tTw-CO-q75" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="mJd-1f-7qd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
